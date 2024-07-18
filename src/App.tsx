@@ -1,8 +1,11 @@
+import { Header } from './components/Header'
 import { Post } from './components/Post'
+import './global.css'
 
 function App() {
   return (
     <>
+      <Header />
       <h1>App</h1>
       <Post
         title="Teta"
