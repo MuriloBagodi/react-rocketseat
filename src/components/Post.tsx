@@ -1,34 +1,66 @@
 import styles from './Post.module.css'
-
 import profilePic from '../assets/profile-pic.jpeg'
+import { useEffect, useState } from 'react'
+import { differenceInDays, differenceInHours, parseISO } from 'date-fns'
 
-export const Post = () => {
+declare interface PostInfo {
+  author: string
+  date: string
+  title: string
+  authorRole: string
+  content: string
+  avatar?: string
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const usePostTime = (postDate: any) => {
+  const [timeAgo, setTimeAgo] = useState('')
+
+  useEffect(() => {
+    const calculateTimeAgo = () => {
+      const now = new Date()
+      const postTime = parseISO(postDate)
+      const hours = differenceInHours(now, postTime)
+
+      if (hours < 24) {
+        setTimeAgo(`${hours}h`)
+      } else {
+        const days = differenceInDays(now, postTime)
+        setTimeAgo(`${days} dias`)
+      }
+    }
+
+    calculateTimeAgo()
+
+    // Optional: Update the time difference every hour
+    const interval = setInterval(calculateTimeAgo, 3600000)
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval)
+  }, [postDate])
+
+  return timeAgo
+}
+
+export const Post = (props: PostInfo) => {
+  const timeAgo = usePostTime(props.date)
+
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
           <img className={styles.avatar} src={profilePic} alt="" />
           <div className={styles.authorInfo}>
-            <strong>Nome</strong>
-            <span>Cargo</span>
+            <strong>{props.author}</strong>
+            <span>{props.authorRole}</span>
           </div>
         </div>
 
-        <time dateTime="2024-07-21 15:23:00">Publicado há 1h</time>
+        <time dateTime={props.date}>Publicado há {timeAgo}</time>
       </header>
 
       <div className={styles.content}>
-        <p>Fala galeraa 👋</p>
-        <p>
-          Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
-          no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀
-        </p>
-        <p>
-          👉 <a href="#">jane.design/doctorcare</a>
-        </p>
-        <p>
-          <a href="#">#novoprojeto #nlw #rocketseat</a>
-        </p>
+        <p>{props.content}</p>
       </div>
     </article>
   )
