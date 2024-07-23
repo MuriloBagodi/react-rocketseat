@@ -21,6 +21,8 @@ function App() {
               date={post.date}
               title={post.title}
               key={index}
+              avatar={post.avatar}
+              comments={post.comments}
             ></Post>
           ))}
         </main>

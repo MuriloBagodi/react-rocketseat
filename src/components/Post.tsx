@@ -1,7 +1,7 @@
 import styles from './Post.module.css'
-import profilePic from '../assets/profile-pic.jpeg'
 import { useEffect, useState } from 'react'
 import { differenceInDays, differenceInHours, parseISO } from 'date-fns'
+import { Comment } from './Comment'
 
 declare interface PostInfo {
   author: string
@@ -10,6 +10,7 @@ declare interface PostInfo {
   authorRole: string
   content: string
   avatar?: string
+  comments?: { comment: string }[]
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -44,12 +45,11 @@ const usePostTime = (postDate: any) => {
 
 export const Post = (props: PostInfo) => {
   const timeAgo = usePostTime(props.date)
-
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src={profilePic} alt="" />
+          <img className={styles.avatar} src={props.avatar} alt="" />
           <div className={styles.authorInfo}>
             <strong>{props.author}</strong>
             <span>{props.authorRole}</span>
@@ -71,6 +71,11 @@ export const Post = (props: PostInfo) => {
           <button type="submit">Publicar</button>
         </footer>
       </form>
+      <div className={styles.commentList}>
+        {props.comments?.map(({ comment }, index) => (
+          <Comment key={index} comment={comment} avatar={props.avatar} />
+        ))}
+      </div>
     </article>
   )
 }

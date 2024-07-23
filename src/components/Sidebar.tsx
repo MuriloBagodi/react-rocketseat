@@ -1,7 +1,8 @@
 import styles from './Sidebar.module.css'
 import bannerImg from '../assets/banner-profile.jpg'
-import profilePic from '../assets/profile-pic.jpeg'
+
 import { PencilLine } from '@phosphor-icons/react'
+import { Avatar } from './Avatar'
 
 declare interface ProfileInfo {
   name: string
@@ -20,11 +21,7 @@ export const SideBar = (props: ProfileInfo) => {
       />
       <div className={styles.profile}>
         <div className={styles.profilePicDiv}>
-          <img
-            className={styles.profilePic}
-            src={props.profilePicUrl ?? profilePic}
-            alt=""
-          />
+          <Avatar src="https://github.com/msbagodi" />
         </div>
         <strong>{props.name}</strong>
         <span>{props.role}</span>

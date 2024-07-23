@@ -1,77 +1,101 @@
 [
-  {
-    "author": "Jane Doe",
-    "date": "2024-07-20T14:00:00Z",
-    "title": "Exploring React Hooks",
-    "authorRole": "Senior Developer",
-    "content": "React hooks provide a powerful and expressive way to manage state and side effects in functional components.",
-    "avatar": "https://example.com/avatars/jane.jpg"
-  },
-  {
-    "author": "John Smith",
-    "date": "2024-07-19T08:30:00Z",
-    "title": "Introduction to TypeScript",
-    "authorRole": "Software Engineer",
-    "content": "TypeScript extends JavaScript by adding static types, which can improve code quality and development speed.",
-    "avatar": "https://example.com/avatars/john.jpg"
-  },
-  {
-    "author": "Alice Johnson",
-    "date": "2024-07-18T11:45:00Z",
-    "title": "Mastering CSS Grid",
-    "authorRole": "Frontend Developer",
-    "content": "CSS Grid Layout is a two-dimensional layout system for the web that allows developers to create complex and responsive designs with ease."
-  },
-  {
-    "author": "Bob Brown",
-    "date": "2024-07-17T09:15:00Z",
-    "title": "Understanding Node.js",
-    "authorRole": "Backend Developer",
-    "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, designed to build scalable network applications.",
-    "avatar": "https://example.com/avatars/bob.jpg"
-  },
-  {
-    "author": "Charlie Davis",
-    "date": "2024-07-16T13:00:00Z",
-    "title": "Building REST APIs with Express",
-    "authorRole": "Full Stack Developer",
-    "content": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications."
-  },
-  {
-    "author": "Dana Lee",
-    "date": "2024-07-15T10:20:00Z",
-    "title": "Getting Started with MongoDB",
-    "authorRole": "Database Administrator",
-    "content": "MongoDB is a document-oriented NoSQL database used for high volume data storage.",
-    "avatar": "https://example.com/avatars/dana.jpg"
-  },
-  {
-    "author": "Eve Martin",
-    "date": "2024-07-14T16:45:00Z",
-    "title": "A Guide to Flexbox",
-    "authorRole": "UI/UX Designer",
-    "content": "Flexbox is a CSS layout module that makes it easy to design flexible and efficient layout structures."
-  },
-  {
-    "author": "Frank White",
-    "date": "2024-07-13T08:00:00Z",
-    "title": "Understanding GraphQL",
-    "authorRole": "API Developer",
-    "content": "GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data."
-  },
-  {
-    "author": "Grace Green",
-    "date": "2024-07-12T14:30:00Z",
-    "title": "Introduction to Docker",
-    "authorRole": "DevOps Engineer",
-    "content": "Docker is a platform designed to help developers build, share, and run modern applications."
-  },
-  {
-    "author": "Henry King",
-    "date": "2024-07-11T12:15:00Z",
-    "title": "Learning Kubernetes",
-    "authorRole": "Cloud Architect",
-    "content": "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.",
-    "avatar": "https://example.com/avatars/henry.jpg"
-  }
-]
+      {
+        "author": "Jane Doe",
+        "date": "2024-07-20T14:00:00Z",
+        "title": "Exploring React Hooks",
+        "authorRole": "Senior Developer",
+        "content": "React hooks provide a powerful and expressive way to manage state and side effects in functional components.",
+        "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
+        "comments": [
+      {"comment": "uauuuuuuuuuuu que de mais"},
+      {"comment": "Sensacional"},
+      {"comment": "Radical"},
+      {"comment": "É o Brad"}
+    ]
+      },
+      {
+        "author": "John Smith",
+        "date": "2024-07-19T08:30:00Z",
+        "title": "Introduction to TypeScript",
+        "authorRole": "Software Engineer",
+        "content": "TypeScript extends JavaScript by adding static types, which can improve code quality and development speed.",
+        "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+        "comments": [
+      {"comment": "uauuuuuuuuuuu que de mais"},
+      {"comment": "Sensacional"},
+      {"comment": "Radical"},
+      {"comment": "É o Brad"}
+    ]
+      },
+      {
+        "author": "Alice Johnson",
+        "date": "2024-07-18T11:45:00Z",
+        "title": "Mastering CSS Grid",
+        "authorRole": "Frontend Developer",
+        "content": "CSS Grid Layout is a two-dimensional layout system for the web that allows developers to create complex and responsive designs with ease.",
+        "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
+        "comments": [
+      {"comment": "uauuuuuuuuuuu que de mais"},
+      {"comment": "Sensacional"},
+      {"comment": "Radical"},
+      {"comment": "É o Brad"}
+    ]
+      },
+      {
+        "author": "Bob Brown",
+        "date": "2024-07-17T09:15:00Z",
+        "title": "Understanding Node.js",
+        "authorRole": "Backend Developer",
+        "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, designed to build scalable network applications.",
+        "avatar": "https://randomuser.me/api/portraits/men/2.jpg"
+      },
+      {
+        "author": "Charlie Davis",
+        "date": "2024-07-16T13:00:00Z",
+        "title": "Building REST APIs with Express",
+        "authorRole": "Full Stack Developer",
+        "content": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+        "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+      },
+      {
+        "author": "Dana Lee",
+        "date": "2024-07-15T10:20:00Z",
+        "title": "Getting Started with MongoDB",
+        "authorRole": "Database Administrator",
+        "content": "MongoDB is a document-oriented NoSQL database used for high volume data storage.",
+        "avatar": "https://randomuser.me/api/portraits/women/3.jpg"
+      },
+      {
+        "author": "Eve Martin",
+        "date": "2024-07-14T16:45:00Z",
+        "title": "A Guide to Flexbox",
+        "authorRole": "UI/UX Designer",
+        "content": "Flexbox is a CSS layout module that makes it easy to design flexible and efficient layout structures.",
+        "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
+      },
+      {
+        "author": "Frank White",
+        "date": "2024-07-13T08:00:00Z",
+        "title": "Understanding GraphQL",
+        "authorRole": "API Developer",
+        "content": "GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data.",
+        "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+      },
+      {
+        "author": "Grace Green",
+        "date": "2024-07-12T14:30:00Z",
+        "title": "Introduction to Docker",
+        "authorRole": "DevOps Engineer",
+        "content": "Docker is a platform designed to help developers build, share, and run modern applications.",
+        "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+      },
+      {
+        "author": "Henry King",
+        "date": "2024-07-11T12:15:00Z",
+        "title": "Learning Kubernetes",
+        "authorRole": "Cloud Architect",
+        "content": "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.",
+        "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+      }
+    ]
+    
