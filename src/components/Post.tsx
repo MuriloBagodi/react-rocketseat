@@ -62,6 +62,15 @@ export const Post = (props: PostInfo) => {
       <div className={styles.content}>
         <p>{props.content}</p>
       </div>
+
+      <hr />
+      <form className={styles.commentForm} action="">
+        <strong>Deixe seu feedback</strong>
+        <textarea placeholder="Deixe seu comentário"></textarea>
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </article>
   )
 }
