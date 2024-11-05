@@ -21,7 +21,7 @@ export const SideBar = (props: ProfileInfo) => {
       />
       <div className={styles.profile}>
         <div className={styles.profilePicDiv}>
-          <Avatar src="https://github.com/msbagodi" />
+          <Avatar src="https://github.com/murilobagodi.png" />
         </div>
         <strong>{props.name}</strong>
         <span>{props.role}</span>

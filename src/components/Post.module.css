@@ -24,6 +24,7 @@
   font-weight: bold;
   text-decoration: none;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .content a:hover{
