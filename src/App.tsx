@@ -13,12 +13,12 @@ function App() {
       <div className={styles.wrapper}>
         <SideBar name="Murilo Bagodi" role="Software Engineer" />
         <main>
-          {posts.map((post, index) => (
+          {posts.map((post) => (
             <Post
               author={post.author}
               content={post.content}
               publishedAt={post.publishedAt}
-              key={index}
+              key={post.id}
             ></Post>
           ))}
         </main>

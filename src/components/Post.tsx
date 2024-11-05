@@ -70,12 +70,12 @@ export const Post = (props: PostInfo) => {
       </header>
 
       <div className={styles.content}>
-        {props.content.map((content, index) => {
+        {props.content.map((content) => {
           if (content.type === 'paragraph') {
-            return <p key={index}>{content.content}</p>
+            return <p key={content.content}>{content.content}</p>
           } else {
             return (
-              <a key={index} href={content.content}>
+              <a key={content.content} href={content.content}>
                 {content.content}
               </a>
             )
@@ -101,10 +101,10 @@ export const Post = (props: PostInfo) => {
         </footer>
       </form>
       <div className={styles.commentList}>
-        {comment.map((comment, index) => {
+        {comment.map((comment) => {
           return (
             <Comment
-              key={index}
+              key={comment}
               comment={comment}
               avatar="https://github.com/murilobagodi.png"
             />
